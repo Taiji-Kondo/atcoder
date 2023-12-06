@@ -21,7 +21,6 @@ fn main() {
 fn is_rep_digit(num: u32) -> bool {
     let mut num = num;
     let last_digit = num % 10;
-    println!("{}", last_digit);
     while num > 0 {
         if num % 10 != last_digit {
             return false;
