@@ -20,7 +20,9 @@ fn main() {
 
 fn is_rep_digit(num: u32) -> bool {
     let mut num = num;
+    // 最後の桁の数値
     let last_digit = num % 10;
+    // それぞれの桁が最後の桁の数値と同じか判定していく
     while num > 0 {
         if num % 10 != last_digit {
             return false;
